@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expandible list code challenge</title>
+    <style>
+        .n,.n1,.n2,.n3,.n4{
+            display:none;
+        }
+        dt{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 70px;
+        }
+        dd{
+            margin-top: 5px;
+
+        }
+
+    </style>
+</head>
+<body>
+   <ul>
+    <li><dl><dt class="m">Audi</dt><dd class="n">Audi Q3,Audi Q5,Audi Q7</dd></dl</li>
+
+    <li><dl><dt class="m1">BMW</dt><dd class="n1">BMW X5,BMW X7,BMW X1,BMW X3</dd></dl></li>
+
+    <lI><dl><dt class="m2">Ferrari</dt><dd class="n2">Ferrari 250 GTO,Ferrari F4O,Ferrari Enzo,Ferrari 812</dd></dl></LI>
+
+    <li><dl><dt class="m3">Lamborghini</dt><dd class="n3">Lamborghini Miura,Lamborghini Jalpa,Lamborghini Diablo</dd></dl></li>
+
+    <li><dl><dt class="m4">Bugati</dt><dd class="n4">Bugatti Veyron,Bugatti Divo,Bigatti Bolide</dd></dl></li>
+
+   </ul>
+
+   <script>
+    const item = document.querySelector(".m");
+    const sublist = document.querySelector(".n");
+ item.addEventListener("click",function() {
+        sublist.style.display="block";
+     });
+
+     const item2 = document.querySelector(".m1")
+     const sublist2 = document.querySelector(".n1")
+item2.addEventListener("click",function() {
+        sublist2.style.display="block";
+     });
+
+     const item3 = document.querySelector(".m2")
+     const sublist3 = document.querySelector(".n2")
+item3.addEventListener("click",function(){
+        sublist3.style.display="block";
+     });
+     const item4 = document.querySelector(".m3")
+     const sublist4 = document.querySelector(".n3")
+item4.addEventListener("click",function(){
+        sublist4.style.display="block";
+     });
+     const item5 = document.querySelector(".m4")
+     const sublist5 = document.querySelector(".n4")
+item5.addEventListener("click",function(){
+        sublist5.style.display="block";
+     });
+     const item6 = document.querySelector('.m5')
+     const sublist6 = document.querySelector(".n5")
+item6.addEventListener("click",function(){
+    sublist6.style.display="block";
+})
+
+   </script>
+    
+</body>
+</html>

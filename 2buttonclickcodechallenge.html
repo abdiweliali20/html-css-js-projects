@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changing background color with two buttons</title>
+</head>
+<body id="demo"  style="display: flex;align-items: center;justify-content: center;margin-top: 200px;padding: 20px;font-size:100px;">
+   <button id="div" style="background-color: aquamarine; font-size: 60px;">click</button>
+   <button id="button2" style="background-color: yellow;margin-left: 5px;font-size: 60px;">click</button>
+
+   <script>
+      const body = document.getElementById("demo")
+      body.addEventListener('click',()=>{
+         body.style.backgroundColor ="aquamarine"
+      },true)
+         
+      const button2 = document.getElementById('button2')
+      button2.addEventListener("click",()=>[
+         body.style.backgroundColor ="yellow"
+      ],true)
+    
+   </script>
+    
+</body>
+</html>
